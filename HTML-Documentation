@@ -1,0 +1,77 @@
+# **Simon Game - HTML Documentation**
+
+## **1. Overview**
+This document describes the structure and purpose of the HTML file (`index.html`) used in the Simon Game. The HTML file defines the user interface and links external stylesheets and scripts to create an interactive memory-based game.
+
+---
+
+## **2. File Structure**
+- `index.html` - The main structure of the webpage.
+- `styles.css` - The stylesheet for UI styling.
+- `game.js` - The JavaScript file controlling the game logic.
+
+---
+
+## **3. HTML Structure**
+
+### **3.1. Head Section**
+```html
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+```
+- Defines the document character set as UTF-8.
+- Sets the title of the webpage.
+- Links the external CSS file (`styles.css`).
+- Includes a Google Font (`Press Start 2P`).
+
+---
+
+### **3.2. Body Section**
+```html
+<body>
+  <h1 id="level-title">Press A Key to Start</h1>
+  <div class="container">
+    <div class="row">
+      <div type="button" id="green" class="btn green"></div>
+      <div type="button" id="red" class="btn red"></div>
+    </div>
+    <div class="row">
+      <div type="button" id="yellow" class="btn yellow"></div>
+      <div type="button" id="blue" class="btn blue"></div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="game.js" charset="utf-8"></script>
+</body>
+```
+- **Heading (`h1`)**: Displays the game status (e.g., "Press A Key to Start").
+- **Game Board (`div.container`)**:
+  - Contains four colored buttons (green, red, yellow, and blue) arranged in a grid.
+  - Each button has a unique ID (`id="green"`, `id="red"`, etc.).
+- **JavaScript Inclusions**:
+  - Loads jQuery from a CDN.
+  - Includes the game logic script (`game.js`).
+
+---
+
+## **4. Functionality Overview**
+- The webpage initializes with a title prompting the user to start the game.
+- Pressing any key begins the game sequence.
+- Players interact with the colored buttons.
+- The JavaScript file (`game.js`) handles user input, game logic, and animations.
+
+---
+
+## **5. Future Enhancements**
+- Improve UI responsiveness for mobile devices.
+- Add accessibility features for better usability.
+- Enhance animations and transitions for a smoother experience.
+
+---
+
+### **This document provides a structured understanding of the `index.html` file in the Simon Game project.**
+
